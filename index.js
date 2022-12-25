@@ -115,8 +115,6 @@ $(function () {
 
     
     function playersAmountOfWins() {
-        
-
         if (currentPlayer === "X") {
             oAmountOfWins++;
         } else {

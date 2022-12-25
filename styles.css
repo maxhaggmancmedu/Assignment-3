@@ -137,6 +137,7 @@ button:hover {
 }
 
 .scores {
+   display: none;
    left: 80%;
    position: absolute;
    top: 24%;
@@ -144,10 +145,55 @@ button:hover {
 
 .display-scores {
    margin-top: 16px;
+   font-size: 2em;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 900px) {
+   header {
+      padding: 24px;
+   }
+
+  .game-rules {
+   left: 25%;
+   top: 15%;
+   width: 50%;
+  }
+
+  .read-rules {
+   background-color: #FFFFFF;
+   border: 2px solid #F679E5;
+   border-radius: 10px;
+   padding: 8px 16px;
+}
+
+  .game-container {
+   margin-top: 48px;
+   }
    
+   .scores {
+      top: 8%;
+   }
+
+   .display-scores {
+      font-size: 1.3em;
+   }
+}
+
+@media screen and (max-width: 380px) {
+   .game-rules {
+      left: 14%;
+      top: 15%;
+      width: 72%;
+   }
 
    
+   
+   .scores {
+      
+      top: 3%;
+   }
+
+   .display-scores {
+      font-size: 1.3em;
+   }
  }
