@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tic Tac Toe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="index.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    </head>
+<body>
+    <header>
+        <h1 class="game-title">Tic Tac Toe</h1>
+    </header>
+    <main>
+        <div class="game-rules">
+            <h3>GAME RULES <i class="fa fa-angle-down"></i></h3>
+            <div class="read-rules">
+                <p>1. The game is played on a grid that's 3 squares by 3 squares.</p>
+                <p>2. You are X, your friend is O. Players take turns putting their marks in empty squares.</p>
+                <p>3. The first player to get 3 of their marks in a row (up, down, across, or diagonally) is the winner.</p>
+                <p>4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.</p>
+            </div>
+        </div>
+        <div class="game-container">
+            <div class="cell-container">
+                <div data-cell-index="0" class="cell"></div>
+                <div data-cell-index="1" class="cell"></div>
+                <div data-cell-index="2" class="cell"></div>
+                <div data-cell-index="3" class="cell"></div>
+                <div data-cell-index="4" class="cell"></div>
+                <div data-cell-index="5" class="cell"></div>
+                <div data-cell-index="6" class="cell"></div>
+                <div data-cell-index="7" class="cell"></div>
+                <div data-cell-index="8" class="cell"></div>
+            </div>
+            <h2 class="game-status"></h2>
+            <button class="game-restart">Restart Game</button>
+        </div>
+        <div class="scores">
+            <h3>SCORES</h3>
+            <div class="display-scores">
+                <p class="x-wins"></p>
+                <p class="o-wins"></p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
